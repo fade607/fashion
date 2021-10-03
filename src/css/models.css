@@ -1,0 +1,42 @@
+.models {
+    padding: 3rem;
+}
+
+.model-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.model-image img {
+    margin-bottom: 20px;
+    width: 30vw;
+    height: 40vw;
+}
+
+@media (max-width: 500px) {
+    .model-image {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1px;
+    }
+    .models {
+        padding: 1.2rem;
+    }
+    .model-image img {
+        width: 45vw;
+        height: 50vw;
+    }
+}
+
+@media (max-width: 320px) {
+    .model-image {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+    }
+    .model-image img {
+        width: 100%;
+        height: 60%;
+    }
+}

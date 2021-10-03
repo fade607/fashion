@@ -1,0 +1,36 @@
+.services {
+    display: flex;
+    width: 65vw;
+}
+
+.services h1 {
+    font-size: 3rem;
+}
+
+.services-box1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem;
+}
+
+@media (max-width: 770px) {
+    .services {
+        width: 100%;
+        margin: 10px 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .services {
+        font-size: 0.8rem;
+        margin: 1rem 0.5rem;
+        padding: 5px;
+    }
+    .services-box1 {
+        padding: 10px;
+    }
+    .services h1 {
+        font-size: 2rem;
+    }
+}

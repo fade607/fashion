@@ -1,0 +1,39 @@
+.content-header {
+    display: flex;
+}
+
+.left-text {
+    margin-top: 15rem;
+    margin-left: 2rem;
+    font-size: 3rem;
+    animation-name: move-left;
+    animation-duration: 2s;
+    animation-timing-function: initial;
+}
+
+@keyframes move-left {
+    0% {
+        opacity: 0;
+        transform: translateZ(-100px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 720px) {
+    .left-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .left-text {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,179 @@
+.contentText {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8rem;
+    height: 50vh;
+}
+
+.box {
+    color: #000;
+    /* font-family: Georgia, "Times New Roman", Times, serif; */
+    font-weight: 2rem;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    padding: 20px;
+    height: 35vh;
+    /* animation: move-textBox 3s ease-in;
+*/
+}
+
+.box a {
+    text-decoration: none;
+    border-bottom: 2px solid orange;
+    color: #000;
+    font-style: oblique;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.box a:hover {
+    background-color: rgb(218, 218, 218);
+    border-radius: 10px;
+}
+
+.box h2 {
+    font-style: oblique;
+    border-bottom: 3px solid orange;
+}
+
+.contentImage {
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+    object-fit: inherit;
+    clip-path: polygon(0% 50%, 100% 10%, 100% 100%, 0% 100%);
+}
+
+.content-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    height: 70vh;
+    padding: 50px 150px;
+}
+
+.content-box img {
+    height: 50vh;
+}
+
+.text {
+    will-change: auto;
+}
+
+@media (max-width: 1170px) {
+    .contentText p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1040px) {
+    .contentText p {
+        font-size: 0.9rem;
+    }
+    .contentText h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 990px) {
+    .contentText {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 4rem;
+    }
+    .contentText p {
+        font-size: 0.8rem;
+    }
+    .contentText h2 {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .contentText {}
+}
+
+@media (max-width: 720px) {
+    .contentText {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        align-content: center;
+        margin-top: -50px;
+    }
+    .left {
+        padding: 30px;
+        margin-top: -20rem;
+    }
+    .contentText p {
+        font-size: 0.9rem;
+    }
+    .contentText h2 {
+        font-size: 1rem;
+    }
+    .text p {
+        font-size: 0.8rem;
+    }
+    .text {
+        padding: 10px;
+    }
+    .text h1 {
+        font-size: 1rem;
+    }
+    .contentImage {
+        height: 25vh;
+    }
+}
+
+@media (max-width: 640px) {
+    .contentText {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 17rem;
+        padding-top: 20rem;
+    }
+    .right {
+        margin-top: -12rem;
+    }
+    .contentText a {
+        font-size: 1rem;
+    }
+    .contentImage {
+        height: 60vh;
+    }
+    .contentImage2 {
+        width: 30vw;
+        height: 30vw;
+    }
+}
+
+@media (max-width: 405px) {
+    .contentText p {
+        font-size: 0.7rem;
+    }
+    .contentText h2 {
+        font-size: 0.7rem;
+    }
+    .contentImage {
+        height: 30vh;
+        margin-top: 2rem;
+    }
+    .contentImage2 {
+        display: none;
+    }
+}
+
+@media (max-width: 390px) {
+    .content-box {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .left {
+        margin-top: -30rem;
+    }
+    .right {
+        margin-top: -20rem;
+    }
+}
